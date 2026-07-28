@@ -3,10 +3,10 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 
-const ZHIPU_API_BASE = "https://open.bigmodel.cn/api/coding/paas/v4";
-const MODELS = ["glm-5-turbo", "glm-4.7", "glm-4.7-flash"];
-const MAX_TOKENS = 50000;
-const TEMPERATURE = 0.3;
+const NVIDIA_API_BASE = "https://integrate.api.nvidia.com/v1";
+const MODELS = ["nvidia/nemotron-3-super-120b-a12b", "nvidia/nemotron-3-nano-30b-a3b"];
+const MAX_TOKENS = 16384;
+const TEMPERATURE = 1.0;
 const TIMEOUT_MS = 480000;
 const MAX_RETRIES = 3;
 
@@ -39,14 +39,14 @@ function safeJSONParse(text) {
   return null;
 }
 
-async function callZhipuAI(systemPrompt, userPrompt, apiKey) {
+async function callNvidiaAI(systemPrompt, userPrompt, apiKey) {
   for (const model of MODELS) {
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
       try {
         console.error(`[INFO] Calling ${model} (attempt ${attempt}/${MAX_RETRIES})...`);
         const controller = new AbortController();
         const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
-        const res = await fetch(`${ZHIPU_API_BASE}/chat/completions`, {
+        const res = await fetch(`${NVIDIA_API_BASE}/chat/completions`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -60,6 +60,9 @@ async function callZhipuAI(systemPrompt, userPrompt, apiKey) {
             ],
             max_tokens: MAX_TOKENS,
             temperature: TEMPERATURE,
+            top_p: 0.95,
+            stream: false,
+            chat_template_kwargs: { enable_thinking: false },
           }),
           signal: controller.signal,
         });
@@ -333,7 +336,7 @@ footer a:hover{text-decoration:underline}
 <div class="header-meta">
 <span class="badge badge-date">📅 ${sanitize(date)}</span>
 <span class="badge badge-count">📊 ${totalCount} 篇文獻</span>
-<span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+<span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
 </div>
 </div>
 </header>
@@ -413,9 +416,9 @@ p{color:var(--muted);font-size:15px;margin-bottom:32px}
 }
 
 async function main() {
-  const apiKey = process.env.ZHIPU_API_KEY;
+  const apiKey = process.env.NVIDIA_API_KEY;
   if (!apiKey) {
-    console.error("[FATAL] ZHIPU_API_KEY not set");
+    console.error("[FATAL] NVIDIA_API_KEY not set");
     process.exit(1);
   }
 
@@ -441,7 +444,7 @@ async function main() {
   const systemPrompt = buildSystemPrompt();
   const userPrompt = buildUserPrompt(papers);
 
-  const result = await callZhipuAI(systemPrompt, userPrompt, apiKey);
+  const result = await callNvidiaAI(systemPrompt, userPrompt, apiKey);
 
   if (!result) {
     console.error("[ERROR] All AI models failed, generating fallback report");

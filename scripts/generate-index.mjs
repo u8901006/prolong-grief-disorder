@@ -68,7 +68,7 @@ footer a:hover{text-decoration:underline}
 ${links}
 </ul>
 <footer>
-<span>Powered by PubMed + Zhipu AI</span>
+<span>Powered by PubMed + NVIDIA Nemotron</span>
 <span>·</span>
 <a href="https://github.com/u8901006/prolong-grief-disorder" target="_blank" rel="noopener">GitHub</a>
 </footer>
