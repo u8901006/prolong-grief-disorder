@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PGD 文獻日報 · 延長性哀傷疾患 · 2026-10-02</title>
+<meta name="description" content="延長性哀傷疾患（PGD）每日文獻日報，2026-10-02，共 25 篇文獻">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:color-mix(in srgb,var(--surface) 92%,white)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Sans TC","PingFang TC","Helvetica Neue",Arial,sans-serif;background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);line-height:1.7;min-height:100vh}
+.container{max-width:880px;margin:0 auto;padding:48px 28px 72px}
+header{display:flex;align-items:center;gap:18px;margin-bottom:36px;animation:fadeDown .5s ease}
+.logo{font-size:44px;line-height:1}
+.header-text h1{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.header-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.badge{display:inline-block;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:500}
+.badge-date{background:var(--accent-soft);color:var(--accent)}
+.badge-count{background:rgba(90,122,58,.1);color:#5a7a3a}
+.badge-source{background:rgba(118,100,83,.08);color:var(--muted)}
+.summary-card{background:var(--card-bg);border-radius:24px;padding:28px 30px;border:1px solid var(--line);box-shadow:0 8px 30px rgba(61,36,15,.04);margin-bottom:32px;animation:fadeUp .5s ease}
+.summary-card h2{font-size:16px;color:var(--accent);margin-bottom:8px}
+.summary-text{font-size:15px;color:var(--text);line-height:1.8}
+.section{margin-bottom:32px}
+.section-title{font-size:17px;font-weight:700;color:var(--text);margin-bottom:18px;padding-bottom:8px;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:8px}
+.section-icon{font-size:20px}
+.news-card{background:var(--card-bg);border-radius:24px;padding:26px 28px;border:1px solid var(--line);box-shadow:0 8px 30px rgba(61,36,15,.04);margin-bottom:16px;transition:transform .2s,box-shadow .2s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.news-card.featured{border-left:3px solid var(--accent)}
+.card-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}
+.rank-badge{background:var(--accent);color:#fff7f0;font-size:13px;font-weight:700;padding:4px 10px;border-radius:6px;white-space:nowrap;flex-shrink:0}
+.card-title-group{flex:1}
+.card-title{font-size:15.5px;font-weight:600;color:var(--text);line-height:1.5}
+.card-title-en{font-size:13px;color:var(--muted);margin-top:2px;font-style:italic;line-height:1.4}
+.card-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;font-size:12.5px}
+.meta-journal{color:var(--accent);font-weight:600}
+.meta-date{color:var(--muted)}
+.meta-doi,.meta-pubmed{color:var(--accent);text-decoration:none;font-weight:500}
+.meta-doi:hover,.meta-pubmed:hover{text-decoration:underline}
+.card-summary{font-size:14.5px;color:var(--text);line-height:1.75;margin-bottom:12px}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.pico-item{background:rgba(140,79,43,.04);border-radius:12px;padding:10px 14px}
+.pico-label{display:block;font-size:11.5px;font-weight:600;color:var(--accent);margin-bottom:2px;text-transform:uppercase;letter-spacing:.5px}
+.pico-value{font-size:13.5px;color:var(--text);line-height:1.5}
+.card-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.utility{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:600}
+.utility-high{color:#5a7a3a;background:rgba(90,122,58,.1)}
+.utility-medium{color:#9f7a2e;background:rgba(159,122,46,.1)}
+.utility-low{color:var(--muted);background:rgba(118,100,83,.08)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:500}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{width:90px;font-size:12.5px;color:var(--muted);text-align:right;flex-shrink:0}
+.topic-bar-bg{flex:1;height:20px;background:rgba(140,79,43,.06);border-radius:10px;overflow:hidden}
+.topic-bar-fill{height:100%;background:linear-gradient(90deg,var(--accent),#c47a4a);border-radius:10px;transition:width .6s ease}
+.topic-count{font-size:12.5px;color:var(--accent);font-weight:600;width:24px;text-align:center}
+.keywords-section .keywords{display:flex;flex-wrap:wrap;gap:6px}
+.clinic-banner{margin:36px 0 12px;padding:22px 28px;background:linear-gradient(135deg,var(--accent-soft),#f5e6d5);border-radius:20px;border:1px solid var(--line);display:flex;flex-direction:column;gap:10px;animation:fadeUp .6s ease}
+.clinic-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--accent);font-weight:600;font-size:15px;transition:gap .2s}
+.clinic-link:hover{gap:16px}
+.clinic-icon{font-size:24px}
+.clinic-name{flex:1}
+.clinic-arrow{font-size:18px;color:var(--accent)}
+.subscribe-section{margin-top:14px;padding:18px 24px;background:var(--card-bg);border-radius:16px;border:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.subscribe-title{font-size:14px;font-weight:600;color:var(--accent)}
+.subscribe-links{display:flex;flex-wrap:wrap;gap:10px}
+.subscribe-links a{text-decoration:none;color:var(--accent);font-weight:500;font-size:13.5px;padding:4px 12px;background:var(--accent-soft);border-radius:999px;transition:background .2s}
+.subscribe-links a:hover{background:#dcc5a8}
+footer{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);flex-wrap:wrap;gap:8px;margin-top:20px}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{text-decoration:underline}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.container{padding:36px 18px 60px}.summary-card,.news-card{padding:20px 18px}.pico-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:6px;text-align:center}.topic-name{width:70px;font-size:11px}.card-header{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">🕯️</div>
+<div class="header-text">
+<h1>PGD 文獻日報 · 延長性哀傷疾患</h1>
+<div class="header-meta">
+<span class="badge badge-date">📅 2026-10-02</span>
+<span class="badge badge-count">📊 25 篇文獻</span>
+<span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
+</div>
+</div>
+</header>
+
+<div class="summary-card">
+<h2>📋 今日文獻趨勢</h2>
+<p class="summary-text">今日 PGD 文獻聚焦於縱向研究與文化因素探討，特別是親子喪失與哀傷軌跡、數位介入及跨文化表現。多篇研究採用網絡分析、潛類別分析及結構方程模型，強調個別化介入與早期篩檢的重要性。</p>
+</div>
+
+<div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+      <div class="news-card featured">
+        <div class="card-header">
+          <span class="rank-badge">#1</span>
+          <div class="card-title-group">
+            <h3 class="card-title">喪前與喪後哀傷的縱向軌跡及其與心理健康結果的關聯：中國哀傷隊列2025的試點前瞻性隊列研究</h3>
+            <p class="card-title-en">Longitudinal Trajectories of Grief Before and After Bereavement and Their Association With Mental Health Outcomes: A Pilot Prospective Cohort Study From the China Grief Cohort 2025.</p>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-journal">Depression and anxiety</span>
+          <span class="meta-date">2026 09 30</span>
+          <a class="meta-doi" href="https://doi.org/10.1155%2Fda%2F5274616" target="_blank" rel="noopener">DOI</a>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42812817/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">此試點前瞻性隊列研究追蹤60名末期疾病患者的直系親屬，識別出兩種喪前哀傷軌跡（低度、增加型）與四種喪後軌跡（高度/下降、中度/下降、低度/下降、高度/延長）。結果顯示，增加型喪前哀傷與持續高度/延長型喪後哀傷顯著關聯較高的PGD、憂鬱與焦慮發病率，提示喪前哀傷模式可能為後續精神疾病的早期風險指標。</p>
+        <div class="pico-grid">
+          <div class="pico-item"><span class="pico-label">研究對象</span><span class="pico-value">60名成年直系親屬（平均年齡52.82歲，53.3%為女性），多為終末期患者的子女（73.3%）</span></div>
+          <div class="pico-item"><span class="pico-label">介入方法</span><span class="pico-value">前瞻性隊列追蹤，使用AGS、PG-13-R、HAMD-17、HAMA及IES-R量表於基線、喪前每月、喪後每三個月評估哀傷、憂鬱、焦慮與壓力</span></div>
+          <div class="pico-item"><span class="pico-label">對照基準</span><span class="pico-value">不同哀傷軌跡組間比較（Low vs Increasing；high/decreasing vs high/prolonged 等）</span></div>
+          <div class="pico-item"><span class="pico-label">主要結果</span><span class="pico-value">最終訪視時PGD發病率16.7%、憂鬱16.7%、焦慮30.0%。Increasing喪前軌跡與high/prolonged喪後軌跡顯著關聯較高精神疾病風險</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="utility utility-high">臨床實用性 ★★★</span>
+          <div class="tags"><span class="tag">哀傷軌跡</span><span class="tag">喪前哀傷</span><span class="tag">精神健康預測</span><span class="tag">前瞻性研究</span><span class="tag">中國隊列</span></div>
+        </div>
+      </div>
+
+      <div class="news-card featured">
+        <div class="card-header">
+          <span class="rank-badge">#2</span>
+          <div class="card-title-group">
+            <h3 class="card-title">延長性哀傷疾患中的性別差異：從症狀互連與功能障礙的網絡視角</h3>
+            <p class="card-title-en">Gender differences in prolonged grief: a network perspective on symptom interconnections and functional impairment.</p>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 08 24</span>
+          <a class="meta-doi" href="https://doi.org/10.1080%2F20008066.2026.2711483" target="_blank" rel="noopener">DOI</a>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42635333/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">針對香港1,093名喪親成年人進行網絡分析，發現女性整體症狀嚴重度較高，但兩性網絡全局強度無顯著差異。無助感與退出在兩網絡中具有最高期望影響力（EI），而身份混亂在男性網絡中EI較高。功能障礙與症狀的關聯亦隨性別而異，提示需性別敏感之評估與介入。</p>
+        <div class="pico-grid">
+          <div class="pico-item"><span class="pico-label">研究對象</span><span class="pico-value">1,093名香港喪親成年人（274名男性，平均年齡37.03歲）</span></div>
+          <div class="pico-item"><span class="pico-label">介入方法</span><span class="pico-value">使用PG-13-R進行網絡分析，檢視邊強度、預期影響力（EI）、全局強度及網絡結構之性別差異，並探討功能障礙與症狀的關聯</span></div>
+          <div class="pico-item"><span class="pico-label">對照基準</span><span class="pico-value">男性 vs 女性網絡結構與症狀-功能關聯比較</span></div>
+          <div class="pico-item"><span class="pico-label">主要結果</span><span class="pico-value">女性症狀嚴重度較高；無助感與退出為跨性別核心症狀；身份混亂在男性中較為中心；症狀-功能關聯存在性別差異</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="utility utility-high">臨床實用性 ★★★</span>
+          <div class="tags"><span class="tag">性別差異</span><span class="tag">網絡分析</span><span class="tag">症狀互連</span><span class="tag">功能障礙</span><span class="tag">PGD-13-R</span></div>
+        </div>
+      </div>
+
+      <div class="news-card featured">
+        <div class="card-header">
+          <span class="rank-badge">#3</span>
+          <div class="card-title-group">
+            <h3 class="card-title">針對延長性哀傷疾患的網路認知療法（iCT-PG）：發展個案系列</h3>
+            <p class="card-title-en">Internet Cognitive Therapy for Prolonged Grief Disorder (iCT-PG): a developmental case series.</p>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 13</span>
+          <a class="meta-doi" href="https://doi.org/10.1080%2F20008066.2026.2627050" target="_blank" rel="noopener">DOI</a>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41873489/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">評估八名符合PGD診斷標準的成人參與12次網路認知療法（iCT-PG）之可行性、接受度與臨床療效。所有參與者完成治療，事後87.5%達可靠改善並低於臨床切-off值。療程顯著減少PGD、PTSD、憂鬱、焦慮症狀與功能障礙，且療效在3個月隨訪時維持。失憶相關記憶特徵改善最大（d=2.61），支持iCT-PG為具潛力之數位介入。</p>
+        <div class="pico-grid">
+          <div class="pico-item"><span class="pico-label">研究對象</span><span class="pico-value">八名診斷符合PGD標準的成人（遠端接受治療）</span></div>
+          <div class="pico-item"><span class="pico-label">介入方法</span><span class="pico-value">12週的iCT-PG（瀏覽器/平板/智慧型手機），包含每週治療師通話與訊息，聚焦於失憶相關記憶特徵、負面評估、無益應對策略及社會隔離感</span></div>
+          <div class="pico-item"><span class="pico-label">對照基準</span><span class="pico-value">治療前 vs 治療後 vs 3個月隨訪（單組前後比較）</span></div>
+          <div class="pico-item"><span class="pico-label">主要結果</span><span class="pico-value">PGD症狀顯著減少（處理前後效應值d=1.29-1.64），87.5%達可靠改善與臨床復原，療效於3個月隨訪時維持</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="utility utility-high">臨床實用性 ★★★</span>
+          <div class="tags"><span class="tag">網路介入</span><span class="tag">認知療法</span><span class="tag">PGD治療</span><span class="tag">數位療癒</span><span class="tag">遠端治療</span></div>
+        </div>
+      </div>
+
+      <div class="news-card featured">
+        <div class="card-header">
+          <span class="rank-badge">#4</span>
+          <div class="card-title-group">
+            <h3 class="card-title">利用大規模問卷資料識別急性與延長性哀傷的風險因子</h3>
+            <p class="card-title-en">Identifying risk factors of acute and prolonged grief using large-scale survey data.</p>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-journal">Journal of affective disorders</span>
+          <span class="meta-date">2026 09 25</span>
+          <a class="meta-doi" href="https://doi.org/10.1016%2Fj.jad.2026.122434" target="_blank" rel="noopener">DOI</a>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42660391/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">大規模線上調查（喪失6個月內N=2,450；6個月以上N=3,609）發現，失去伴侶或子女、非自然死亡、意外死亡及低社會支持滿意度為急性與延長性哀傷嚴重度的共同風險因子。而COVID-19相關死亡僅與延長性哀傷獨立關聯，提示疫情喪失具特殊致病機制。</p>
+        <div class="pico-grid">
+          <div class="pico-item"><span class="pico-label">研究對象</span><span class="pico-value">6,059名喪親成年人（分為喪失6個月內及6個月以上兩組）</span></div>
+          <div class="pico-item"><span class="pico-label">介入方法</span><span class="pico-value">線上問卷評估人口學、喪失特徵、情境因子（如ICU進入、說再見、財務損失等）與哀傷嚴重度</span></div>
+          <div class="pico-item"><span class="pico-label">對照基準</span><span class="pico-value">變項單變量及多變量分析，比較急性(&lt;6月) vs 延長性(≥6月)哀傷之風險因子</span></div>
+          <div class="pico-item"><span class="pico-label">主要結果</span><span class="pico-value">伴侶/子女喪失、非自然/意外死亡、低社會支持為兩類哀傷的共通風險；COVID-19死亡僅預測延長性哀傷；年齡、ICU進入、說再見、財務損失僅影響急性哀傷</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="utility utility-high">臨床實用性 ★★★</span>
+          <div class="tags"><span class="tag">風險因子</span><span class="tag">社會支持</span><span class="tag">死亡類型</span><span class="tag">疫情喪失</span><span class="tag">大規模調查</span></div>
+        </div>
+      </div>
+
+      <div class="news-card featured">
+        <div class="card-header">
+          <span class="rank-badge">#5</span>
+          <div class="card-title-group">
+            <h3 class="card-title">喪失後的福祉比較與心理健康結果：雙波長縱向研究</h3>
+            <p class="card-title-en">Well-being comparisons and mental health outcomes following loss: a two-wave longitudinal study.</p>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 07</span>
+          <a class="meta-doi" href="https://doi.org/10.1080%2F20008066.2026.2686574" target="_blank" rel="noopener">DOI</a>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42411705/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對315名喪親個體進行六個月雙波長縱向研究，證實頻繁負向福祉比較（如與過去相比）、比較落差及負性情緒影響會預測六個月後較高的PGD、PTSD、憂鬱、焦慮及身體症狀。 mediation 分析顯示，比較頻率透過增加落差引發負性情緒，進而影響 psychopathology。</p>
+        <div class="pico-grid">
+          <div class="pico-item"><span class="pico-label">研究對象</span><span class="pico-value">315名喪親個體</span></div>
+          <div class="pico-item"><span class="pico-label">介入方法</span><span class="pico-value">評估福祉比較（社會、時間、反事實、期待基準）、反覆思考、迴避、兒時逆境及心理健康結果（PGD、PTSD、憂鬱、焦慮、身體症狀、孤單）</span></div>
+          <div class="pico-item"><span class="pico-label">對照基準</span><span class="pico-value">Time 1 vs Time 2（六個月後）之福祉比較變項對心理健康結果的預測力</span></div>
+          <div class="pico-item"><span class="pico-label">主要結果</span><span class="pico-value">負向福祉比較頻率、比較落差及負性情緒影響顯著預測六個月後較高 psychopathology；落差與情緒影響在比較頻率與 psychopathology 間起中介作用</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="utility utility-medium">臨床實用性 ★★</span>
+          <div class="tags"><span class="tag">福祉比較</span><span class="tag">認知模式</span><span class="tag">心理病理</span><span class="tag">縱向研究</span><span class="tag">喪後適應</span></div>
+        </div>
+      </div>
+
+      <div class="news-card featured">
+        <div class="card-header">
+          <span class="rank-badge">#6</span>
+          <div class="card-title-group">
+            <h3 class="card-title">失去患癌子女之父母的長期哀傷經驗：多中心橫斷面研究結果</h3>
+            <p class="card-title-en">Long-term grief experiences of parents who lost a child to cancer - Results from a multicenter cross-sectional study.</p>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-journal">Palliative medicine</span>
+          <span class="meta-date">2026 09 27</span>
+          <a class="meta-doi" href="https://doi.org/10.1177%2F02692163261465772" target="_blank" rel="noopener">DOI</a>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42603866/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">瑞士多中心研究發現，失去子女於癌症之父母即使超過十年仍持續經歷哀傷。平均哀傷強度為23.3（11-55分），年思為最突出症狀。潛類別分析識別出三種哀傷類型：低度（56%）、中度（32%）及高度（12%）。貧困風險高與在醫療機構死亡顯著關聯較高哀傷強度，而喪失時間越長則哀傷強度越低。</p>
+        <div class="pico-grid">
+          <div class="pico-item"><span class="pico-label">研究對象</span><span class="pico-value">103名親屬（來自81名故去兒童），子女診斷時年齡≤18歲，死亡時間≥1年前參與研究</span></div>
+          <div class="pico-item"><span class="pico-label">介入方法</span><span class="pico-value">橫斷面調查使用PG-13（11項，5點 Likert），計算總分評估哀傷強度，並進行敘述統計、潛類別分析與線性迴歸</span></div>
+          <div class="pico-item"><span class="pico-label">對照基準</span><span class="pico-value">不同哀傷類組間比較；社會學與癌症相關變項對哀傷強度的影響</span></div>
+          <div class="pico-item"><span class="pico-label">主要結果</span><span class="pico-value">平均哀傷強度23.3；年思最高（3.2），提醒迴避最低（1.3）；高度哀傷類佔12%；貧困風險（β=11.04）與醫療機構死亡（β=3.82）增加哀傷；喪失時間延長減少哀傷（β=-5.46）</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="utility utility-medium">臨床實用性 ★★</span>
+          <div class="tags"><span class="tag">親喪</span><span class="tag">長期哀傷</span><span class="tag">潛類別分析</span><span class="tag">社會經濟因子</span><span class="tag">姑息治療</span></div>
+        </div>
+      </div>
+
+      <div class="news-card featured">
+        <div class="card-header">
+          <span class="rank-badge">#7</span>
+          <div class="card-title-group">
+            <h3 class="card-title">奧胡斯延長性哀傷疾患量表（A-PGDs）：識別具臨床驗證切-off分數以篩選PGD高風險者</h3>
+            <p class="card-title-en">The Aarhus Prolonged Grief Disorder Scale (A-PGDs): identification of a clinically validated cut-off score for identifying bereaved at risk of PGD.</p>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 10</span>
+          <a class="meta-doi" href="https://doi.org/10.1080%2F20008066.2026.2633003" target="_blank" rel="noopener">DOI</a>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41801980/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">針對122名喪親成年人（89.9%女性），使用ROC分析建立A-PGDs之兩步驟篩選流程：首先需核心症狀項目≥3，之後相關症狀總分≥27（ICD-11）或≥29（DSM-5-TR）。此方法對ICD-11 PGD之敏感度80%、特異度70%；DSM-5-TR則為78%、74%。顯示A-PGDs具臨床實用之簡易評分方式，適合初級照護快速篩檢。</p>
+        <div class="pico-grid">
+          <div class="pico-item"><span class="pico-label">研究對象</span><span class="pico-value">122名喪親成年人（喪失超過六個月，89.9%女性）</span></div>
+          <div class="pico-item"><span class="pico-label">介入方法</span><span class="pico-value">使用A-PGDs自評量表，並以A-PGDi結構化臨床訪談為金標準，透過ROC分析確定核心與相關症狀切-off值</span></div>
+          <div class="pico-item"><span class="pico-label">對照基準</span><span class="pico-value">兩步驟篩選法（核心症狀+相關症狀切-off） vs 單一總分 cutoff 的診斷表現</span></div>
+          <div class="pico-item"><span class="pico-label">主要結果</span><span class="pico-value">核心症狀≥3識別出81.1%參與者；在此群體中，相關症狀≥27（ICD-11）敏感度80%/特異度61%，≥29（DSM-5-TR）為81%/66%；兩步驟法ICD-11：敏感度80%/特異度70%，DSM-5-TR：78%/74%</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="utility utility-high">臨床實用性 ★★★</span>
+          <div class="tags"><span class="tag">評估工具</span><span class="tag">切-off值</span><span class="tag">ROC分析</span><span class="tag">ICD-11</span><span class="tag">DSM-5-TR</span></div>
+        </div>
+      </div>
+
+      <div class="news-card featured">
+        <div class="card-header">
+          <span class="rank-badge">#8</span>
+          <div class="card-title-group">
+            <h3 class="card-title">德國土耳其移民中的延長性哀傷：流行率與移民哀傷的作用</h3>
+            <p class="card-title-en">Prolonged grief among Turkish migrants in Germany: prevalence and the role of migratory grief.</p>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 08</span>
+          <a class="meta-doi" href="https://doi.org/10.1080%2F20008066.2026.2627054" target="_blank" rel="noopener">DOI</a>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41711366/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對937名德國第一及第二代土耳其移民進行調查，發現PGD流行率分別為5.97%（第一代）與5.45%（第二代）。移民哀傷在兩代中均為PGD顯著預測因子（第一代β=0.300，第二代β=0.197），提示移民經驗與 ancestral loss 之結合需納入PGD風險評估。第一代與第二代在性別、喪失時間、死亡國度、居留狀況、社會支持及問卷語言上存在顯著差異。</p>
+        <div class="pico-grid">
+          <div class="pico-item"><span class="pico-label">研究對象</span><span class="pico-value">937名德國境內具有土耳其移民背景之成年人（第一代及第二代）</span></div>
+          <div class="pico-item"><span class="pico-label">介入方法</span><span class="pico-value">迴歸分析與比較檢定（t-test、卡方、Fisher），評估遷移哀傷、喪失次數、時間因子等與PGD症狀的關聯</span></div>
+          <div class="pico-item"><span class="pico-label">對照基準</span><span class="pico-value">第一代 vs 第二代土耳其移民在PGD流行率、相關因子及人口學特徵上的差異</span></div>
+          <div class="pico-item"><span class="pico-label">主要結果</span><span class="pico-value">PGD流行率：第一代5.97%，第二代5.45%；移民哀傷為兩代共通顯著預測因子；第一代尚受&gt;5次喪失（β=0.201）及時間因子影響；第二代則與是否與逝者同國相關（β=0.225）</span></div>
+        </div>
+        <div class="card-footer">
+          <span class="utility utility-medium">臨床實用性 ★★</span>
+          <div class="tags"><span class="tag">移民哀傷</span><span class="tag">文化適應</span><span class="tag">PGD流行率</span><span class="tag">祖國喪失</span><span class="tag">跨文化研究</span></div>
+        </div>
+      </div></div>
+
+<div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+      <div class="news-card">
+        <h3 class="card-title">死亡態度與哀傷症狀之縱向關聯：三波交叉滯後研究</h3>
+        <p class="card-title-en">The Longitudinal Association Between Death Attitudes and Grief Symptoms: A Three-Wave Cross-Lagged Study.</p>
+        <div class="card-meta">
+          <span class="meta-journal">Omega</span>
+          <span class="meta-date">2026 09 28</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42803144/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對159名中國大學生進行六個月間隔三波研究，發現Time 1之死亡恐懼預測Time 2較高哀傷；反之，Time 1哀傷預測Time 2降低中性接受，而Time 2哀傷則預測Time 3增加逃避接受。結果顯示死亡認知與哀傷存在維度特定之雙向關聯。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">理解烏克蘭心理健康需求：戰時兒童與照護者心理健康縱向調查方案</h3>
+        <p class="card-title-en">Understanding mental health needs in Ukraine: protocol for a longitudinal survey of mental health in children and caregivers during the war in Ukraine.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 29</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42520168/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">UNITY研究旨在建立全國代表性縱向隊列，追蹤烏克蘭8-16歲兒童及其照護者在俄羅斯全面入侵期間之心理健康，涵蓋焦慮、憂鬱、PTSD、延長性哀傷等多維度，將分三波進行資料收集，以瞭解戰爭創傷的長期影響。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">ICD-11延長性哀傷疾患之結構維度與身體化關聯</h3>
+        <p class="card-title-en">The dimensionality and somatisation correlates of ICD-11 prolonged grief disorder.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 29</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42520153/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">根據美國MAGIC研究子樣本（n=395）證實ICD-11 PGD為三維結構（Loss、Emotional Reactivity、Emotional Numbing），其中僅Emotional Numbing在控制變項後獨特預測身體痛苦（β=.29，p&lt;.01），顯示情感退縮可能是PGD與身體症狀關聯之核心機制。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">多重戰爭相關喪失對斯雷布雷尼察及東波斯尼亞地區女性倖存者之長期心理影響：質焦點團體研究</h3>
+        <p class="card-title-en">Long-term psychological consequences of multiple war-related loss among women survivors of Srebrenica and other Eastern Bosnia regions: a qualitative focus group study.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 21</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42478193/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對25名經歷多重戰爭喪失之波斯尼亞女性進行焦點團體訪談，發現其三十年後仍持續經歷創傷性哀傷、慢性心理困擾與身體症狀。主要主題包括持續戰爭創傷、正義與制度失效、污名與照護障礙、個人應對策略及外部支持系統，顯示創傷與喪失之長期性以及文化與系統介入之必要性。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title"> neonatal、兒童及成人加護病房之家屬焦點末期照護與哀傷介入效果：概覽性文獻檢討</h3>
+        <p class="card-title-en">Effectiveness of Family-Focused End of Life and Bereavement Interventions Across Neonatal, Paediatric, and Adult Intensive Care: An Overview of Reviews.</p>
+        <div class="card-meta">
+          <span class="meta-journal">Journal of clinical nursing</span>
+          <span class="meta-date">2026 10 01</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42444537/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">綜合15篇系統性文獻檢討（145項初級研究），發現端溝通策略（誠實、適時、個人化）提升家屬滿意度；家屬參與決策、親緣式護見與紀念製作被視為重要，但對心理結果（如PGD）之影響證據仍嫌不足，顯示需更標準化之哀傷支援模式。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">喪失後的福祉比較與心理健康結果：雙波長縱向研究</h3>
+        <p class="card-title-en">Well-being comparisons and mental health outcomes following loss: a two-wave longitudinal study.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 07</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42411705/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對315名喪親個體進行六個月雙波長縱向研究，證實頻繁負向福祉比較（如與過去相比）、比較落差及負性情緒影響會預測六個月後較高的PGD、PTSD、憂鬱、焦慮及身體症狀。 mediation 分析顯示，比較頻率透過增加落差引發負性情緒，進而影響 psychopathology。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">晚年被俘之影響：10月7日襲擊事件後之初步發現</h3>
+        <p class="card-title-en">Effects of late-life captivity: preliminary findings following the 7 October attack.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 06 23</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42334866/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對26名加沙地圍 kibbutzim 高齡猶太人（平均年齡82.11歲）進行研究，發現雖曾被哈瑪斯俘虜之者PGD水準較高，但總體創傷後反應水準仍低。惡劣虐待經驗與當下孤獨感、安全感分別關聯較高PGD與PTSD，提示高齡個體之韌性與風險因子具有情境特異性。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">喪親父母之怒在哀傷process 中的體驗：質性分析</h3>
+        <p class="card-title-en">Bereaved parents&#39; experiences of anger as a part of their grieving process: a qualitative analysis.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 17</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42189909/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對2011年Utøya恐怖攻擊後九年之22名喪親父母進行訪談，識別出三種怒的體驗：（1）怒未參與哀傷，（2）怒為自然哀傷部分，（3）怒使哀傷複雜化。自我導向怒被發現為心理困擾之標誌，顯示怒在創傷性哀傷中的多面性及其與文化規範之關聯。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">整合哀傷研究資料：MARBLES計畫——來自實證研究之 bereavement 與 loss 多地區資料存檔</h3>
+        <p class="card-title-en">Pooling data from studies on prolonged grief: the Multi-region Archive of Research data on Bereavement and Loss from Empirical Studies (MARBLES) project.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 17</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42186902/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">MARBLES計畫已整合來自九國32個資料集、共16,666名喪親個體之資料，初步分析顯示參與者平均年齡中40歲、70%為女性、18.3%符合ICD-11臨床PGD門檻。該資料庫證實跨國資料整合之可行性，為研究PGD流行率、發病機制與預測因子提供統一平台。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">中國獨子喪失父母中哀傷反覆思考在延長性哀傷疾患中的雙重角色：質性研究</h3>
+        <p class="card-title-en">The dual role of grief rumination in prolonged grief disorder among Chinese Shidu parents: A qualitative study.</p>
+        <div class="card-meta">
+          <span class="meta-journal">Journal of affective disorders</span>
+          <span class="meta-date">2026 06 07</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42144141/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對11名中國Shidu父母（喪失獨子）進行半結構化訪談，發現哀傷反覆思考包含五個面向（意義、關係、反事實、不公、反應），具有雙刃效應：一方面加深情痛苦與回避，另一方面促進意思重建與自我理解。其內容與功能深受血脈延續、孝道、集體主義及命運觀等文化因素塑造，提示需文化敏感之評估與介入。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">&quot;孩子優先&quot;？— 照護自殺或謀殺喪失兒童者之衝突角色</h3>
+        <p class="card-title-en">&#39;Children first?&#39; - the conflicting roles of carers for children bereaved by suicide or homicide.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 16</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/42089291/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對九名自殺及一名謀殺喪失兒童之照護者進行訪談，發現其在照顧兒童與自身哀傷間經歷角色衝突：一方面壓抑自身哀傷以維持功能（視為良好照護之責任），另一方面難以尋找合適空間進行自身哀傷。此種角色張力導致情感耗竭、內疚與復原延遲，提示創傷知照服務需同時關照照護者與兒童之需求。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">哀傷模組團體療法：理論基礎與中國新型哀傷介入方案之試點研究</h3>
+        <p class="card-title-en">Grief modular group therapy: theoretical bases and pilot study of a new bereavement intervention programme in China.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 15</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41979437/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對69名具有哀傷症狀之中國個體實施十節哀傷模組團體療法（GMGT），並以64名無介入對照組比較。結果顯示介入組PGD症狀顯著減少（Cohen&#39;s d=0.85），且於三個月隨訪時效應維持（d=0.86），證明GMGT具文化適應性之介入潛力，尤其適用於資源有限之環境。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">利用深偽技術進行喪失後虛擬重新編寫：延長性哀傷治療之多基線設計研究方案</h3>
+        <p class="card-title-en">Virtual rescripting after loss using deepfake technology in prolonged grief treatment: a study protocol for a multiple baseline design.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 14</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41920163/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">此研究方案將探索深偽技術在意象重新編寫（imagery rescripting）中的應用，以減輕PGD強度、未完成事、反覆思考、罪惡感、遺憾及負面情緒，同時提升幸福感與正面情緒。採用多基線設計，九名參與者將隨機分配五至七週基線後接受五週介入（含三次治療師指導階段），以隨機檢定分析結果。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">兒童創傷哀傷量表-照護者報告版（TGI-K-CR）之初步驗證</h3>
+        <p class="card-title-en">A preliminary validation of the traumatic grief inventory-kids-caregiver-report (TGI-K-CR).</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 11</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41853993/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對196名荷蘭照護者（82%女性，平均年齡44歲）評估其47%為女童之子女（平均年齡11歲）使用TGI-K-CR。結果顯示該量表具有良好內部一致性（DSM-5-TR ω=.85，ICD-11 ω=.87），且照護者自身PGD程度較高及喪失較近時，會評估子女PGD較高。ROC分析建議切-off為≥46（DSM-5-TR）及≥52（ICD-11），支持其作為兒童PGD篩選工具之初步效度。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">透過伊朗文化信念探討延長性哀傷疾患：質性主題分析</h3>
+        <p class="card-title-en">Exploring prolonged grief disorder through Iranian cultural beliefs: a qualitative thematic analysis.</p>
+        <div class="card-meta">
+          <span class="meta-journal">European journal of psychotraumatology</span>
+          <span class="meta-date">2026 07 11</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41837525/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對十七名符合PGD篩選標準之德黑蘭 bereaved 成人進行半結構化訪談，發現五個相互關聯主題：死亡歸因、文化哀傷象徵、哀傷期望之悖論、令人困擾之宗教信念及有害文化刻板印象。參與者將其PGD體驗與內疚、社會壓力及精神衝突關聯，提示需文化適應之評估與介入策略，以應對伊朗特有之哀傷表達與社會期望。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">青少年哀傷之共設計無引導網路認知行為療法：試點隨機對照試驗</h3>
+        <p class="card-title-en">Co-designed unguided internet cognitive behaviour therapy for grief in adolescence: a pilot randomised controlled trial.</p>
+        <div class="card-meta">
+          <span class="meta-journal">Cognitive behaviour therapy</span>
+          <span class="meta-date">2026 09 23</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41493819/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">試點研究對88名經歷親友喪失或其他類型損失（如父母離婚）之青少年（平均年齡16.95歲）實施共設計無引導網路認知行為療法，與四週待機對照組比較。主要焦點為焦慮，次要結果包含幸福感、憂鬱、PTSD及PGD。雖無顯著差異在主要及次要臨床結果，但介入組在隨訪時顯著降低焦慮、憂鬱與PTSD，且97%完成者表示喜愛該計畫，顯示其可行性與接受度。</p>
+      </div>
+
+      <div class="news-card">
+        <h3 class="card-title">加拿大喪親成年人求助與接受支援之哀傷及心理健康相關因素</h3>
+        <p class="card-title-en">Bereavement and mental health factors associated with seeking and receiving support following loss among Canadian bereaved adults.</p>
+        <div class="card-meta">
+          <span class="meta-journal">Social psychiatry and psychiatric epidemiology</span>
+          <span class="meta-date">2026 09 17</span>
+          <a class="meta-pubmed" href="https://pubmed.ncbi.nlm.nih.gov/41331147/" target="_blank" rel="noopener">PubMed</a>
+        </div>
+        <p class="card-summary">對安大略省1,170名喪親成年人進行橫斷面調查，發現38.9%報告想獲得喪失應對支援，此群體常伴有較高焦慮、憂鬱及PGD症狀。大多數想獲得支援者實際獲得了支援，主要來源為家人、朋友及其他喪親個體。結果顯示心理困擾是求助動機之關鍵，支持以資源為基礎之模式：對有心理困擾者優先提供正式支援，對無困擾者則依賴既有社會網絡。</p>
+      </div></div>
+
+<div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+      <div class="topic-row">
+        <span class="topic-name">文化與社會</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:100%"></div></div>
+        <span class="topic-count">5</span>
+      </div>
+
+      <div class="topic-row">
+        <span class="topic-name">心理治療</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:80%"></div></div>
+        <span class="topic-count">4</span>
+      </div>
+
+      <div class="topic-row">
+        <span class="topic-name">喪親類型</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:80%"></div></div>
+        <span class="topic-count">4</span>
+      </div>
+
+      <div class="topic-row">
+        <span class="topic-name">流行病學</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:60%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+
+      <div class="topic-row">
+        <span class="topic-name">數位介入</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:60%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+
+      <div class="topic-row">
+        <span class="topic-name">診斷與分類</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+
+      <div class="topic-row">
+        <span class="topic-name">評估工具</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+
+      <div class="topic-row">
+        <span class="topic-name">安寧照護</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+
+      <div class="topic-row">
+        <span class="topic-name">兒少哀傷</span>
+        <div class="topic-bar-bg"><div class="topic-bar-fill" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div></div>
+
+<div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="tag">延長性哀傷疾患</span> <span class="tag">PGD</span> <span class="tag">哀傷軌跡</span> <span class="tag">性別差異</span> <span class="tag">網絡分析</span> <span class="tag">數位介入</span> <span class="tag">風險因子</span> <span class="tag">文化因素</span> <span class="tag">親喪</span> <span class="tag">移民哀傷</span></div></div>
+
+<div class="clinic-banner">
+<a href="https://www.leepsyclinic.com/" class="clinic-link" target="_blank" rel="noopener">
+<span class="clinic-icon">🏥</span>
+<span class="clinic-name">李政洋身心診所首頁</span>
+<span class="clinic-arrow">→</span>
+</a>
+<a href="https://blog.leepsyclinic.com/" class="clinic-link" target="_blank" rel="noopener">
+<span class="clinic-icon">📬</span>
+<span class="clinic-name">訂閱電子報</span>
+<span class="clinic-arrow">→</span>
+</a>
+<a href="https://buymeacoffee.com/CYlee" class="clinic-link" target="_blank" rel="noopener">
+<span class="clinic-icon">☕</span>
+<span class="clinic-name">Buy Me a Coffee</span>
+<span class="clinic-arrow">→</span>
+</a>
+</div>
+
+<footer>
+<span>資料來源：PubMed · 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+<span><a href="https://github.com/u8901006/prolong-grief-disorder" target="_blank" rel="noopener">GitHub</a></span>
+</footer>
+</div>
+</body>
+</html>
